@@ -1,0 +1,5 @@
+\contentsline {section}{\numberline {1}Wprowadzenie}{3}{}%
+\contentsline {section}{\numberline {2}Obliczanie etykiet czasowych w zależności od gęstości grafu}{3}{}%
+\contentsline {section}{\numberline {3}Zliczanie łuków powrotnych}{4}{}%
+\contentsline {section}{\numberline {4}Zliczanie łuków powrotnych dla różnych reprezentacji grafu}{4}{}%
+\contentsline {section}{\numberline {5}Podsumowanie}{5}{}%

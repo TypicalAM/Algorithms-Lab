@@ -3,15 +3,28 @@ import logging
 import time
 
 from enum import Enum
+from typing import Callable, Dict, Any
 
 import numpy as np
 
 class Feature(Enum):
     '''Represents the randomizer features'''
     RANDOM, SORTED = range(2)
-def timing(func):
+
+def average_score(amount_of_tries: int) -> Callable:
+    def decorate(func: Callable) -> Callable:
+        def wrapper(*arg, **kw) -> Dict:
+            result = {}
+            tries = [func(*arg, **kw) for _ in range(amount_of_tries)]
+            for key in tries[0]:
+                result[key] = sum([x[key] for x in tries])/amount_of_tries
+            return result
+        return wrapper
+    return decorate
+
+def timing(func: Callable) -> Callable:
     '''Decorator to measure the time of a function run'''
-    def wrapper(*arg, **kw):
+    def wrapper(*arg, **kw) -> tuple[float, Any]:
         start = time.time()
         res = func(*arg, **kw)
         end = time.time()-start

@@ -2,7 +2,7 @@
 
 ## Definicje
 
-- Złożoność algorytmiczna algorytmow opartych o porównanie wynosi $\Omega(n \logn)$
+- Złożoność algorytmiczna algorytmow opartych o porównanie wynosi $\Omega(n \log n)$
 
 ## Quicksort
 
@@ -13,23 +13,27 @@ $$
 $$
 
 - Algorytm działający na zasadzie 'dziel i rządź'
+
 - Jest to metoda rekurencyjna
 
 - Wybieramy 2 (środek) jako pivot, element dzielący
-	- Rozdzielamy mniejsze z lewej, większe z prawej
-	- z lewej szukamy elementów $A[i] \geq x$
-	- napotykamy 5 jako pierwszy element z lewej większy od 2
-	- z prawej szukamy elementów $A[i] \leq x$
-	- napotykamy 1 jako pierwszy element z prawej mniejszy od 2
-	- zamieniamy 5 z 1
+  
+  - Rozdzielamy mniejsze z lewej, większe z prawej
+  - z lewej szukamy elementów $A[i] \geq x$
+  - napotykamy 5 jako pierwszy element z lewej większy od 2
+  - z prawej szukamy elementów $A[i] \leq x$
+  - napotykamy 1 jako pierwszy element z prawej mniejszy od 2
+  - zamieniamy 5 z 1
 
 - Mamy pivot 2
-	- z lewej 6 napotkane
-	- z prawej dwójka jest równa
-	- zamieniamy 6 i 2
+  
+  - z lewej 6 napotkane
+  - z prawej dwójka jest równa
+  - zamieniamy 6 i 2
 
 - Pivot sie nie zmienia, teraz jest na indexie 1
-	- Z lewej teraz są mniejsze, z prawej większe
+  
+  - Z lewej teraz są mniejsze, z prawej większe
 
 Tablica teraz:
 
@@ -38,33 +42,38 @@ $$
 $$
 
 Teraz zablice dzielimy i wywołujemy rekurencyjnie:
+
 - Quicksort dla tablicy $[1,2]$
-	- Dla niej się od razu kończy bo jest posortowane
+  - Dla niej się od razu kończy bo jest posortowane
 - Quicksort dla tablicy $[4,6,8,3,5,7]$
-	- 8 jako pivot
-		- z lewej na 8
-		- z prawej na 7
-		- zamieniamy
+  - 8 jako pivot
+    - z lewej na 8
+    - z prawej na 7
+    - zamieniamy
 
 ## Przypadki
 
 O efektywności tego algorytmu decyduje ilość wywołań rekurencyjnych
 
 - Najgorszy przypadek
-	- Kiedy największy/najmniejszy zawsze jest na środku mamy $O(n)$ podziałów, czyli złożoność $O(n^2)$
+  
+  - Kiedy największy/najmniejszy zawsze jest na środku mamy $O(n)$ podziałów, czyli złożoność $O(n^2)$
 
 - Optymistyczny przypadek, również średni
-	- Dzielimy zawsze na 2, $O(\log[2]n n$
-	- Jest przy medianie jako pivot, czyli tablicy posortowanej
+  
+  - Dzielimy zawsze na 2, $O(\log[2]n n$
+  - Jest przy medianie jako pivot, czyli tablicy posortowanej
 
 - Znajdywanie mediany (żeby łatwo znaleźć pivota)
 
 - Ulepszanie
-	- Kończenie wcześniej rekurencji (np przy 2 elementach, lub przy 100 dla algorytmów prostych)
+  
+  - Kończenie wcześniej rekurencji (np przy 2 elementach, lub przy 100 dla algorytmów prostych)
 
 - Pamięć
-	- Obsługa rekurencji wymaga pamięci
-	- w najgorszym przypadku zagłębienie rekurencji to $n$
+  
+  - Obsługa rekurencji wymaga pamięci
+  - w najgorszym przypadku zagłębienie rekurencji to $n$
 
 ## Sortowanie przez scalanie (Merge sort)
 
@@ -77,29 +86,38 @@ $$
 - Dzieli tablice na pół, aż dojdzie do jednoelementowych tablic (etap podziału)
 
 - Porównujemy 5 i 6
-	- Zostaje takie samo
+  
+  - Zostaje takie samo
+
 - Porównujemy 4 i 2
-	- 2 i 4
+  
+  - 2 i 4
+
 - Porównujemy $[2,4]$ i $[5,6]$
-	- porównujemy szczyty tych stosów (2 i 5)
-	- 2, potem 5 i 4
-	- Jak 2,4 jest juz wyczerpane to mozna przepisac pierwszta tablice
-	- $[2,4,5,6]$
+  
+  - porównujemy szczyty tych stosów (2 i 5)
+  - 2, potem 5 i 4
+  - Jak 2,4 jest juz wyczerpane to mozna przepisac pierwszta tablice
+  - $[2,4,5,6]$
+
 - ...
 
 ## Przypadki
 
 Złożoność czasowa:
+
 - $O(\log[2]n)$ podziałów w etapie podziału
 - $O(\log[2]n)$ scaleń * $n$ operacji
 - $O(n \log[2]n)$ - złożoność w przypadku optymistycznym, neutralnym i pesymistycznym
 
 Złożoność przestrzeni:
+
 - dodatkowe zapotrzebowanie pamięciowe (tablica wynikowa)
 - $O(n)$ - nie działa w miejscu
 - Nie jest wrażliwy na dane wejściowe (stała złożoność)
 
 Dobre jeśli mamy górna granice czasową:
+
 - Limit górny jest mniejszy w merge sorcie
 - Unika się ogromnego skoku quicksorta
 - Np decyzja samochodu autonomicznego
@@ -107,16 +125,17 @@ Dobre jeśli mamy górna granice czasową:
 ## Sortowanie stogowe (przez kopcowanie) - Heap sort
 
 Strutkura danych - stóg, kopiec, sterta
+
 - struktura drzewiasta
-	- drzewo binarne
-	- wejściowo posortowane
-	- liście we 2 ostatnich poziomach
+  - drzewo binarne
+  - wejściowo posortowane
+  - liście we 2 ostatnich poziomach
 
 Jest to rozszerzenie metody selection sort
 
 Jeśli narzucimy takie warunki na tablice to będzie to kopiec:
-	-$A[i]\geq A[2i]$
-	-$A[i]\geq A[2i+1]$
+    -$A[i]\geq A[2i]$
+    -$A[i]\geq A[2i+1]$
 
 Przykładowa lista:
 
@@ -145,12 +164,14 @@ Wystarczy sprawdzać od połowy tablicy czy ta relacja jest prawdziwa, porównu
 ## Przypadki
 
 - $n-1$ iteracji max
-	- 1 zamiana
-	- odbudowa stogu
-	- daje to max $O(\log[2] n)$
-	- minimalnie $O(1)$
+  
+  - 1 zamiana
+  - odbudowa stogu
+  - daje to max $O(\log[2] n)$
+  - minimalnie $O(1)$
 
 - Średnio daje to O(n \log[2]n) dla pesymistycznego, średniego
+
 - Optymistyczny $O(n)$
 
 ## Sortowanie przez zliczanie - Counting sort
@@ -164,7 +185,8 @@ $$
 Nadaje się do sortowania liczb całkowitych z wąskiego zakresu
 
 W naszej tablicy największa wartość $k=6$:
--	maksymalna wartość musi być $O(n)$
+
+- maksymalna wartość musi być $O(n)$
 
 Dodatkowa tablica o wielkości zakresu naszych elementów (6)
 

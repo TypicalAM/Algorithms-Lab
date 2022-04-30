@@ -1,0 +1,391 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.3.17)  25 APR 2022 13:37
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**Sprawozdanie.tex
+(./Sprawozdanie.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-05-07>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count179
+\c@section=\count180
+\c@subsection=\count181
+\c@subsubsection=\count182
+\c@paragraph=\count183
+\c@subparagraph=\count184
+\c@figure=\count185
+\c@table=\count186
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count187
+\Gm@cntv=\count188
+\c@Gm@tempcnt=\count189
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
+\Gm@dimlist=\toks18
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen147
+\Gin@req@width=\dimen148
+)
+(/usr/share/texlive/texmf-dist/tex/latex/polski/polski.sty
+Package: polski 2017/05/04 v1.3.4 Polish language package
+
+   Inputenc package detected. Catcodes not changed.
+
+! Package polski Error: No hyphenation patterns for language `polish'.
+
+See the polski package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.108   \selecthyphenation{polish}
+                                  
+Hyphenation in this language will be disabled.
+
+   Switching to Polish text encoding and Polish maths fonts.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot4enc.def
+File: ot4enc.def 2020/08/10 v2.0s Standard LaTeX file
+Now handling font encoding OT4 ...
+... no UTF-8 mapping file for font encoding OT4
+)
+LaTeX Font Info:    Trying to load font information for OT4+cmr on input line 3
+60.
+
+(/usr/share/texlive/texmf-dist/tex/latex/polski/ot4cmr.fd
+File: ot4cmr.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
+)
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT4/cmr/bx/n on input line 360.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT4/cmss/m/n on input line 360.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT4/cmr/m/it on input line 360.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT4/cmtt/m/n on input line 360.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT4/cmss/bx/n on input line 360.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT4/cmr/bx/it on input line 360.
+LaTeX Font Info:    Encoding `OT1' has changed to `OT4' for symbol font
+(Font)              `operators' in the math version `normal' on input line 360.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT4/cmr/m/n on input line 360.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/plm/m/it on input line 360.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/plsy/m/n on input line 360.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/plex/m/n on input line 360.
+LaTeX Font Info:    Encoding `OT1' has changed to `OT4' for symbol font
+(Font)              `operators' in the math version `bold' on input line 360.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT4/cmr/bx/n on input line 360.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/plm/b/it on input line 360.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/plsy/b/n on input line 360.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen149
+\captionmargin@=\dimen150
+\captionwidth=\dimen151
+\caption@tempdima=\dimen152
+\caption@indent=\dimen153
+\caption@parindent=\dimen154
+\caption@hangindent=\dimen155
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count190
+\c@continuedfloat=\count191
+)
+\c@subfigure=\count192
+\c@subtable=\count193
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count194
+\l__pdf_internal_box=\box47
+)
+(./Sprawozdanie.aux)
+\openout1 = `Sprawozdanie.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: legalpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 867.24002pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=1011.78pt
+* \textwidth=469.75502pt
+* \textheight=867.24002pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count195
+\scratchdimen=\dimen156
+\scratchbox=\box48
+\nofMPsegments=\count196
+\nofMParguments=\count197
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count198
+\MPscratchDim=\dimen157
+\MPnumerator=\count199
+\makeMPintoPDFobject=\count266
+\everyMPtoPDFconversion=\toks20
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Trying to load font information for OML+plm on input line 2
+0.
+
+(/usr/share/texlive/texmf-dist/tex/latex/polski/omlplm.fd
+File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
+)
+LaTeX Font Info:    Trying to load font information for OMS+plsy on input line 
+20.
+
+(/usr/share/texlive/texmf-dist/tex/latex/polski/omsplsy.fd
+File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
+)
+LaTeX Font Info:    Trying to load font information for OMX+plex on input line 
+20.
+
+(/usr/share/texlive/texmf-dist/tex/latex/polski/omxplex.fd
+File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
+)
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <12> on input line 20.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <8> on input line 20.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <6> on input line 20.
+ [1
+
+{/usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Sprawozda
+nie.toc)
+\tf@toc=\write3
+\openout3 = `Sprawozdanie.toc'.
+
+ [2]
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <10> on input line 30.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <7> on input line 30.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <5> on input line 30.
+<etykiety_tabela.png, id=14, 973.38657pt x 58.71938pt>
+File: etykiety_tabela.png Graphic file (type png)
+<use etykiety_tabela.png>
+Package pdftex.def Info: etykiety_tabela.png  used on input line 58.
+(pdftex.def)             Requested size: 469.75502pt x 28.33728pt.
+<etykiety.png, id=15, 612.2875pt x 461.725pt>
+File: etykiety.png Graphic file (type png)
+<use etykiety.png>
+Package pdftex.def Info: etykiety.png  used on input line 67.
+(pdftex.def)             Requested size: 234.8775pt x 177.12003pt.
+
+[3 <./etykiety_tabela.png> <./etykiety.png>]
+<luki_tabela.png, id=23, 688.82344pt x 58.71938pt>
+File: luki_tabela.png Graphic file (type png)
+<use luki_tabela.png>
+Package pdftex.def Info: luki_tabela.png  used on input line 90.
+(pdftex.def)             Requested size: 469.75502pt x 40.0451pt.
+
+Overfull \hbox (25.85706pt too wide) in paragraph at lines 95--96
+\OT4/cmr/m/n/10 analizowany podczas eksperymentu nie byª acykliczny, co jest wa
+runkiem koniecznym do sortowania topologicznego. 
+ []
+
+
+Overfull \hbox (14.80153pt too wide) in paragraph at lines 97--98
+\OT4/cmr/m/n/10 topologiczny dla danego grafu skierowanego. Porz¡dek topologicz
+ny pozwala na ustalenie kolejno±ci wykonywania
+ []
+
+
+Overfull \hbox (13.13486pt too wide) in paragraph at lines 97--98
+\OT4/cmr/m/n/10 powrotny jest ªukiem, który d¡»y w odwrotnym kierunku do ustalo
+nego i nie pozwala na praktyczne zastosowania
+ []
+
+<luki_reprezentacje_tabela.png, id=24, 1041.8925pt x 78.2925pt>
+File: luki_reprezentacje_tabela.png Graphic file (type png)
+<use luki_reprezentacje_tabela.png>
+Package pdftex.def Info: luki_reprezentacje_tabela.png  used on input line 109.
+
+(pdftex.def)             Requested size: 469.75502pt x 35.29938pt.
+<luki_reprezentacje_tabela2.png, id=25, 1041.8925pt x 78.2925pt>
+File: luki_reprezentacje_tabela2.png Graphic file (type png)
+<use luki_reprezentacje_tabela2.png>
+Package pdftex.def Info: luki_reprezentacje_tabela2.png  used on input line 116
+.
+(pdftex.def)             Requested size: 469.75502pt x 35.29938pt.
+<luki_reprezentacje.png, id=26, 459.21562pt x 346.29375pt>
+File: luki_reprezentacje.png Graphic file (type png)
+<use luki_reprezentacje.png>
+Package pdftex.def Info: luki_reprezentacje.png  used on input line 125.
+(pdftex.def)             Requested size: 234.8775pt x 177.12001pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<luki_reprezentacje2.png, id=27, 459.21562pt x 346.29375pt>
+File: luki_reprezentacje2.png Graphic file (type png)
+<use luki_reprezentacje2.png>
+Package pdftex.def Info: luki_reprezentacje2.png  used on input line 132.
+(pdftex.def)             Requested size: 234.8775pt x 177.12001pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (11.97029pt too wide) in paragraph at lines 137--138
+\OT4/cmr/m/n/10 prawie taki sam, podczas gdy reprezentacje zale»ne od warto±ci 
+$\OML/plm/m/it/10 m$ \OT4/cmr/m/n/10 do±wiadczaj¡ prawie dwukrotnego zwi¦kszeni
+a
+ []
+
+[4 <./luki_tabela.png> <./luki_reprezentacje_tabela.png> <./luki_reprezentacje_
+tabela2.png>]
+Overfull \hbox (1.88437pt too wide) in paragraph at lines 147--148
+\OT4/cmr/m/n/10 wcze±niej w tej pracy. Struktura jest prosta w implementacji w 
+\OT4/cmr/bx/n/10 python \OT4/cmr/m/n/10 oraz opªacalna przy niskich g¦sto±ciach
+
+ []
+
+
+Overfull \hbox (14.49565pt too wide) in paragraph at lines 153--154
+[]\OT4/cmr/m/n/10 Wszystkie reprezentacje maj¡ swoje wady oraz zalety i warto r
+ozwa»y¢ wiele czynników podczas decydowania,
+ []
+
+[5 <./luki_reprezentacje.png> <./luki_reprezentacje2.png>] (./Sprawozdanie.aux)
+ ) 
+Here is how much of TeX's memory you used:
+ 3396 strings out of 480806
+ 56969 string characters out of 5905151
+ 356585 words of memory out of 6000000
+ 20755 multiletter control sequences out of 15000+600000
+ 412904 words of font info for 51 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 67i,6n,77p,743b,285s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{/usr/share/texliv
+e/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texlive/texm
+f-dist/fonts/enc/dvips/pl/plms.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvi
+ps/pl/plmi.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/pl/plbx10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/pl/plbx12.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/pl/plmi10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/pl/plr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/pl/plr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr17.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr7.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/pl/plsy10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on Sprawozdanie.pdf (5 pages, 149646 bytes).
+PDF statistics:
+ 73 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+

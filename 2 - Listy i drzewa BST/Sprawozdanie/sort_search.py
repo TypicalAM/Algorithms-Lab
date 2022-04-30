@@ -2,6 +2,7 @@
 import numpy as np
 from utils import timing
 # pylint: disable=invalid-name
+
 def quicksort(arr,left,right):
     '''Quicksort algorithm with pivot element in the middle'''
     pivot=arr[(left+right)//2]
@@ -50,7 +51,7 @@ def a_in_b(A, B):
 @timing
 def x_in_TX(X, tree_X):
     '''Check if all elements from an array are in the tree'''
-    return all(tree_X.search(elem) for elem in X)
+    return all(tree_X.search(elem).data == elem for elem in X)
 
 @timing
 def copy_and_sort(A) -> np.ndarray:

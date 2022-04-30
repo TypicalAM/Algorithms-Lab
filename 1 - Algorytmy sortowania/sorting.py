@@ -9,6 +9,7 @@ def insertion(arr):
     return arr
 
 def selection(arr):
+    #When memory space is limited because it makes the minimum possible number of swaps during sorting.
     end=len(arr)
     for i in range(end):
         m=i

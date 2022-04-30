@@ -31,7 +31,6 @@ class Node:
             return self.right.insert(data)
         self.right = Node(data)
         return True
-
     def search(self,elem: int):
         '''Search in the binary tree'''
         if not self:
@@ -114,9 +113,9 @@ class Tree:
     def from_array(arr):
         '''Create a binary tree from an array'''
         binary_tree = Tree()
-        _ = (binary_tree.insert(elem) for elem in arr)
+        _ = [binary_tree.insert(elem) for elem in arr]
         return binary_tree
-    def checkdepth(self) -> int:
+    def check_depth(self) -> int:
         '''Check the depth of the tree'''
         if not self.root:
             return 0
@@ -124,7 +123,7 @@ class Tree:
     @staticmethod
     def convert_array(arr):
         '''Convert a sorted array so it can be used to create a perfectly balanced tree'''
-        if not arr:
+        if not len(arr):
             return
         new_arr = []
         mid = len(arr)//2

@@ -10,7 +10,7 @@ $$
 
 - Wyszukiwanie liniowe (wyczerpujące)
   
-  -  W najgorszym wypadku wyczerpujemy cała listę
+  - W najgorszym wypadku wyczerpujemy cała listę
   
   - Pesymistycznie mamy element 15 - $O(n)$
 
@@ -108,7 +108,7 @@ Wysokość takiego drzewa to $h=4$
 
 Dopisywanie
 
-- Wadą dokładnie wyważonego drzewa jest fakt, że przy dodawaniu elementów musimy wyważać znowu drzewo. 
+- Wadą dokładnie wyważonego drzewa jest fakt, że przy dodawaniu elementów musimy wyważać znowu drzewo.
 
 - Niezmienność danych jest ważna
 
