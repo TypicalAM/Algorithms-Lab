@@ -2,6 +2,11 @@
 import time
 import logging
 from typing import Any, Callable, Dict
+from enum import Enum, auto
+
+class GraphType(Enum):
+    EULERIAN = auto()
+    HAMILTONIAN = auto()
 
 def average_score(amount_of_tries: int) -> Callable:
     def decorate(func: Callable) -> Callable:
