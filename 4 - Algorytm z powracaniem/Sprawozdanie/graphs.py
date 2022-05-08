@@ -1,10 +1,11 @@
+import itertools
+import random
+
 from networkx.classes.graph import Graph
 from networkx.classes.reportviews import EdgeView
 from networkx.generators.random_graphs import erdos_renyi_graph
-import random
-import itertools
 
-from utils import GraphType
+from utils import timing
 
 class Vertex:
     slots = ('value', 'neighbours', 'degree')
@@ -23,17 +24,15 @@ class Vertex:
         return f'Vertex({value=}, {neighbours=}, {degree=})'
 
 class AdjencencyList:
-    def __init__(self, size: int, density: float, g_type: GraphType) -> None:
+    def __init__(self, size: int, density: float) -> None:
         '''Instanciate a graph and fill it with edges'''
         self.size = size
         self.density = density
         self.vertices = [Vertex(i) for i in range(self.size)]
         self.edges = self.generate_edges()
-        if g_type == GraphType.HAMILTONIAN:
-            self.hamiltonize()
+        self.hamiltonize()
         self.fill_graph()
-        if g_type == GraphType.EULERIAN:
-            self.eulerize()
+        self.eulerize()
         self.edge_num = len(self.edges)
 
     def __repr__(self) -> str:
@@ -113,10 +112,45 @@ class Euler:
                 if not discovered[i] and graph[i].degree:
                     return False
             return True
+
+    @timing
     @staticmethod
-    def is_eulerian(graph: AdjencencyList) -> bool:
+    def check(graph: AdjencencyList) -> bool:
         is_connected = Euler.is_connected(graph)
         odd_vertices = Euler.count_odd_vertices(graph)
         if is_connected and not odd_vertices:
             return True
         return False
+
+class Hamilton:
+    @staticmethod
+    def generate_paths(graph: AdjencencyList, v: Vertex, visited: list, path: list, find_all: bool):
+        if len(path) == graph.size:
+    #        print(path)
+            Hamilton.solutions+=1
+            return
+        for w in v.neighbours:
+            val = w.value
+            if not visited[val]:
+                visited[val] = True
+                path.append(w)
+                Hamilton.generate_paths(graph, w, visited, path, find_all)
+                visited[val] = False
+                path.pop()
+            if Hamilton.solutions and not find_all:
+                return
+
+    @staticmethod
+    def find_paths(graph: AdjencencyList, find_all: bool):
+        for start in graph:
+            path = [start]
+            visited = [False] * graph.size
+            visited[start.value] = True
+            Hamilton.generate_paths(graph, start, visited, path, find_all)
+
+    @timing
+    @staticmethod
+    def check(graph: AdjencencyList, find_all: bool = False) -> int:
+        Hamilton.solutions = 0
+        Hamilton.find_paths(graph,find_all)
+        return Hamilton.solutions

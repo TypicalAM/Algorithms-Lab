@@ -1,12 +1,13 @@
 '''Utilities for the hamiltonian and euclidian cycle algorithms'''
 import time
 import logging
-from typing import Any, Callable, Dict
+from typing import Any, Callable, Dict, Iterable
 from enum import Enum, auto
 
 class GraphType(Enum):
     EULERIAN = auto()
     HAMILTONIAN = auto()
+    RANDOM = auto()
 
 def average_score(amount_of_tries: int) -> Callable:
     def decorate(func: Callable) -> Callable:
@@ -28,7 +29,7 @@ def timing(func: Callable) -> Callable:
         return (end,res)
     return wrapper
 
-def write_to_file(filename: str, tests: range, results: list) -> None:
+def write_to_file(filename: str, tests: Iterable, results: list) -> None:
     '''Write the data to csv format'''
     data = format_results(results, tests)
 
@@ -37,7 +38,7 @@ def write_to_file(filename: str, tests: range, results: list) -> None:
             line = ','.join(row) + '\n'
             file.write(line)
 
-def format_results(results: list, tests: range) -> list:
+def format_results(results: list, tests: Iterable) -> list:
     '''Format the data so that it can be written to a file'''
     data = []
     data.append(list(map(str,tests)))
