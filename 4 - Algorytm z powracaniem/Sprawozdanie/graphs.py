@@ -57,19 +57,21 @@ class AdjencencyList:
         self.edges = list(itertools.pairwise(g)) + list(self.edges)
 
     def eulerize(self) -> None:
-        odd_vertices = [v.value for v in self if v.degree%2==1]
         new_edges = []
+        odd_vertices = [v.value for v in self if v.degree&1]
+
         while odd_vertices:
-            u=random.sample(odd_vertices,1)[0]
-            v=random.sample(odd_vertices,1)[0]
+            u = random.sample(odd_vertices,1)[0]    # Take random odd-degree vertex
+            v = random.sample(odd_vertices,1)[0]    # Another one
             while u==v:
-                v=random.sample(odd_vertices,1)[0]
-            odd_vertices.remove(u)
+                v=random.sample(odd_vertices,1)[0]  # Make sure they are not the same
+            odd_vertices.remove(u)                  # Remove them from odd vertex list
             odd_vertices.remove(v)
-            self.add_edge(u,v)
-            new_edges.append((u,v))
+
+            self.add_edge(u,v)                      # Connect them
+            new_edges.append((u,v))                 # Now they both have an even degree
+
         self.edges = list(self.edges) + new_edges
-        odd_vertices = [v.value for v in self if v.degree%2==1]
 
     def add_edge(self, u: int, v: int) -> None:
         '''Add the edge from u to v'''
