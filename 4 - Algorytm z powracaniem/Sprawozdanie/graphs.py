@@ -55,6 +55,7 @@ class AdjencencyList:
         random.shuffle(g)
         g.append(g[0])
         self.edges = list(itertools.pairwise(g)) + list(self.edges)
+        random.shuffle(self.edges)
 
     def eulerize(self) -> None:
         new_edges = []
@@ -137,10 +138,10 @@ class Hamilton:
                 visited[val] = True
                 path.append(w)
                 Hamilton.generate_paths(graph, w, visited, path, find_all)
+                if Hamilton.solutions and not find_all:
+                    return
                 visited[val] = False
                 path.pop()
-            if Hamilton.solutions and not find_all:
-                return
 
     @staticmethod
     def find_paths(graph: AdjencencyList, find_all: bool):

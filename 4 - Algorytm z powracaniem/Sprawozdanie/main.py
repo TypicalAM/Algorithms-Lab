@@ -1,5 +1,5 @@
 from typing import Dict
-from utils import GraphType, get_logger, write_to_file, average_score
+from utils import get_logger, write_to_file, average_score
 from graphs import AdjencencyList, Euler, Hamilton
 
 @average_score(3)
@@ -10,23 +10,23 @@ def run_test(testcase: int) -> Dict:
     logger.info("Running testcase \t\t(size: %d)", testcase)
     G = AdjencencyList(testcase, 0.2)
 
-    times['Euler_0.2'], _               = Euler.check(G)
+#    times['Euler_0.2'], _               = Euler.check(G)
     times['First_Hamilton_0.2'], _      = Hamilton.check(G)
-    times['All_Hamilton_0.2'], cycles   = Hamilton.check(G, find_all=True) if small_test else (0, 0)
-    times['Cycles_0.2']                 = cycles
+#   times['All_Hamilton_0.2'], cycles   = Hamilton.check(G, find_all=True) if small_test else (0, 0)
+#   times['Cycles_0.2']                 = cycles
 
     logger.info("Running for lower density \t(edges: %d)",G.edge_num)
-    logger.info("Found hamiltonian cycles:\t %d", cycles)
+#   logger.info("Found hamiltonian cycles:\t %d", cycles)
 
     G = AdjencencyList(testcase, 0.6)
 
-    times['Euler_0.6'], _               = Euler.check(G)
+#   times['Euler_0.6'], _               = Euler.check(G)
     times['First_Hamilton_0.6'], _      = Hamilton.check(G)
-    times['All_Hamilton_0.6'], cycles   = Hamilton.check(G, find_all=True) if small_test else (0, 0)
-    times['Cycles_0.6'] = cycles
+#   times['All_Hamilton_0.6'], cycles   = Hamilton.check(G, find_all=True) if small_test else (0, 0)
+#   times['Cycles_0.6'] = cycles
 
     logger.info("Running for higher density \t(edges: %d)",G.edge_num)
-    logger.info("Found hamiltonian cycles:\t %d", cycles)
+#   logger.info("Found hamiltonian cycles:\t %d", cycles)
 
     return times
 
