@@ -1,3 +1,5 @@
 \contentsline {section}{\numberline {1}Wprowadzenie}{3}{}%
 \contentsline {section}{\numberline {2}Wstęp teoretyczny}{3}{}%
 \contentsline {section}{\numberline {3}Prezentacja wyników}{3}{}%
+\contentsline {section}{\numberline {4}Cykle Eulera}{4}{}%
+\contentsline {section}{\numberline {5}Cykle Hamiltona}{5}{}%

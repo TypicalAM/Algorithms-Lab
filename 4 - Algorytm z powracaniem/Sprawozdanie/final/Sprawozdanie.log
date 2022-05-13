@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.3.17)  12 MAY 2022 00:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.3.17)  13 MAY 2022 00:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -164,22 +164,22 @@ File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
 (./Sprawozdanie.aux)
 \openout1 = `Sprawozdanie.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -240,29 +240,29 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Trying to load font information for OML+plm on input line 2
-0.
+1.
 
 (/usr/share/texlive/texmf-dist/tex/latex/polski/omlplm.fd
 File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    Trying to load font information for OMS+plsy on input line 
-20.
+21.
 
 (/usr/share/texlive/texmf-dist/tex/latex/polski/omsplsy.fd
 File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    Trying to load font information for OMX+plex on input line 
-20.
+21.
 
 (/usr/share/texlive/texmf-dist/tex/latex/polski/omxplex.fd
 File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <12> on input line 20.
+(Font)              <12> on input line 21.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <8> on input line 20.
+(Font)              <8> on input line 21.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <6> on input line 20.
+(Font)              <6> on input line 21.
  [1
 
 {/usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Sprawozda
@@ -271,100 +271,104 @@ nie.toc)
 \openout3 = `Sprawozdanie.toc'.
 
  [2]
-Overfull \hbox (10.49564pt too wide) in paragraph at lines 28--29
-\OT4/cmr/m/n/10 grafach nieskierowanych. Kod ¹ródªowy zostaª napisany w j¦zyku 
-\OT4/cmr/bx/n/10 python \OT4/cmr/m/n/10 ze wzgl¦du na prostot¦ implementacji. 
- []
-
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <10> on input line 30.
+(Font)              <10> on input line 29.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <7> on input line 30.
+(Font)              <7> on input line 29.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <5> on input line 30.
+(Font)              <5> on input line 29.
 
-Overfull \hbox (8.8706pt too wide) in paragraph at lines 46--47
-\OT4/cmr/m/n/10 równie» czas wyszukania kolejnej kraw¦dzi $\OML/plm/m/it/10 E$ 
-\OT4/cmr/m/n/10 wychodz¡cej z wierzchoªka $\OML/plm/m/it/10 V$\OT4/cmr/m/n/10 ,
- czas ten jest zale»ny od reprezentacji
- []
-
-
-Overfull \hbox (4.71805pt too wide) in paragraph at lines 48--49
+Overfull \hbox (4.71805pt too wide) in paragraph at lines 47--48
 \OT4/cmr/m/n/10 permutacji kolejnych mo»liwych ±cie»ek z danego wierzchoªka do 
 nieodwiedzonych wierzchoªków s¡siaduj¡cych.
  []
 
+<zad2_tabela.png, id=14, 1134.48843pt x 78.2925pt>
+File: zad2_tabela.png Graphic file (type png)
+<use zad2_tabela.png>
+Package pdftex.def Info: zad2_tabela.png  used on input line 55.
+(pdftex.def)             Requested size: 469.75502pt x 32.4179pt.
+<zad2_wykres.png, id=15, 612.2875pt x 461.725pt>
+File: zad2_wykres.png Graphic file (type png)
+<use zad2_wykres.png>
+Package pdftex.def Info: zad2_wykres.png  used on input line 63.
+(pdftex.def)             Requested size: 234.8775pt x 177.12003pt.
+[3 <./zad2_tabela.png> <./zad2_wykres.png>]
+<zad3_tabela.png, id=26, 1126.96031pt x 60.97781pt>
+File: zad3_tabela.png Graphic file (type png)
+<use zad3_tabela.png>
+Package pdftex.def Info: zad3_tabela.png  used on input line 89.
+(pdftex.def)             Requested size: 469.75502pt x 25.4179pt.
+<zad3_wykres.png, id=27, 612.2875pt x 461.725pt>
+File: zad3_wykres.png Graphic file (type png)
+<use zad3_wykres.png>
+Package pdftex.def Info: zad3_wykres.png  used on input line 97.
+(pdftex.def)             Requested size: 234.8775pt x 177.12003pt.
+ [4 <./zad3_tabela.png> <./zad3_wykres.png>]
+<zad4_H1_tabela.png, id=32, 1155.56718pt x 60.97781pt>
+File: zad4_H1_tabela.png Graphic file (type png)
+<use zad4_H1_tabela.png>
+Package pdftex.def Info: zad4_H1_tabela.png  used on input line 111.
+(pdftex.def)             Requested size: 469.75502pt x 24.78798pt.
+<zad4_H1_wykres.png, id=33, 612.2875pt x 461.725pt>
+File: zad4_H1_wykres.png Graphic file (type png)
+<use zad4_H1_wykres.png>
+Package pdftex.def Info: zad4_H1_wykres.png  used on input line 119.
+(pdftex.def)             Requested size: 234.8775pt x 177.12003pt.
+<zad4_HA_tabela.png, id=34, 587.94656pt x 60.97781pt>
+File: zad4_HA_tabela.png Graphic file (type png)
+<use zad4_HA_tabela.png>
+Package pdftex.def Info: zad4_HA_tabela.png  used on input line 127.
+(pdftex.def)             Requested size: 328.82707pt x 34.10359pt.
+<zad4_HA_wykres.png, id=35, 612.2875pt x 461.725pt>
+File: zad4_HA_wykres.png Graphic file (type png)
+<use zad4_HA_wykres.png>
+Package pdftex.def Info: zad4_HA_wykres.png  used on input line 135.
+(pdftex.def)             Requested size: 234.8775pt x 177.12003pt.
 
-LaTeX Warning: File `zad2_tabela.png' not found on input line 56.
+Overfull \hbox (17.63483pt too wide) in paragraph at lines 139--140
+[]\OT4/cmr/m/n/10 Zarówno dla wyszukiwania pierwszego cyklu Hamiltona jak i wsz
+ystkich cykli Hamiltona w grafie wykorzystali±my
+ []
 
 
-! Package pdftex.def Error: File `zad2_tabela.png' not found: using draft setti
-ng.
+Overfull \hbox (13.96806pt too wide) in paragraph at lines 141--142
+[]\OT4/cmr/m/n/10 Podczas szukania pierwszego cyklu Hamiltona istnieje szansa z
+nalezienia rozwi¡zania przy pierwszym zagª¦bieniu
+ []
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.56 ...hics[width=1.0\linewidth]{zad2_tabela.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Trying to load font information for OT4+cmtt on input line 
-56.
-(/usr/share/texlive/texmf-dist/tex/latex/polski/ot4cmtt.fd
-File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
-)
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: File `zad2_wykres.png' not found on input line 64.
-
-
-! Package pdftex.def Error: File `zad2_wykres.png' not found: using draft setti
-ng.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.64 ...hics[width=0.5\linewidth]{zad2_wykres.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[3] [4] (./Sprawozdanie.aux) ) 
+[5 <./zad4_H1_tabela.png> <./zad4_H1_wykres.png> <./zad4_HA_tabela.png> <./zad4
+_HA_wykres.png>]
+<zad4_CYC.png, id=41, 361.35pt x 60.97781pt>
+File: zad4_CYC.png Graphic file (type png)
+<use zad4_CYC.png>
+Package pdftex.def Info: zad4_CYC.png  used on input line 145.
+(pdftex.def)             Requested size: 281.85587pt x 47.56342pt.
+ [6 <./zad4_CYC.png>] (./Sprawozdanie.aux) ) 
 Here is how much of TeX's memory you used:
- 3419 strings out of 480806
- 57008 string characters out of 5905151
- 354585 words of memory out of 6000000
- 20761 multiletter control sequences out of 15000+600000
- 413200 words of font info for 52 fonts, out of 8000000 for 9000
+ 3384 strings out of 480806
+ 56293 string characters out of 5905151
+ 353585 words of memory out of 6000000
+ 20736 multiletter control sequences out of 15000+600000
+ 412904 words of font info for 51 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 67i,6n,77p,1112b,328s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl
-/pltt.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{/usr/shar
-e/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texl
-ive/texmf-dist/fonts/enc/dvips/pl/plmi.enc}{/usr/share/texlive/texmf-dist/fonts
-/enc/dvips/pl/plms.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/pl/plb
-x10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plbx12.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/pl/plmi10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/pl/plmi7.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/pl/plr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/p
-lr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr17.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/pl/plr7.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/pl/plsy10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/pl/pltt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-s
-uper/sfrm1000.pfb>
-Output written on Sprawozdanie.pdf (4 pages, 77127 bytes).
+ 67i,6n,77p,1135b,277s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/font
+s/enc/dvips/pl/plrm.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super
+/cm-super-ts1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plmi.enc}{/
+usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plms.enc}</usr/share/texlive/te
+xmf-dist/fonts/type1/public/pl/plbx10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/pl/plbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl
+/plmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi7.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/pl/plr10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/pl/plr12.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/pl/plr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl
+/plr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plsy10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on Sprawozdanie.pdf (6 pages, 159107 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
+ 81 PDF objects out of 1000 (max. 8388607)
+ 49 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

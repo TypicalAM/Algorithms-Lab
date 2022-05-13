@@ -27,3 +27,9 @@ https://ekursy.put.poznan.pl/course/view.php?id=22135
 - budowanie dokladnie wywazonego z danych (dzielenie polowkowe)
 
 ### Umieć przejść graf
+
+## Sprawdzian 2
+
+
+
+Algorytm z powracaniem, znajywanie cyklu Eulera i Hamiltona
