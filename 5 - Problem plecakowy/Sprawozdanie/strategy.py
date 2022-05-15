@@ -1,4 +1,5 @@
 import random
+import itertools
 from abc import ABCMeta, abstractstaticmethod
 from representation import Courier
 
@@ -109,3 +110,27 @@ class Example(Strategy):
         '''Every subclass must define a get_best_value, which takes a courier argument and returns int'''
         ...
 
+class BruteForce(Strategy):
+    '''Use backtracking to brute force the best result'''
+
+    @staticmethod
+    def generate_candidates(courier: Courier) -> list:
+        return [list(i) for i in itertools.product([1,0],repeat=courier.size)]
+
+    @staticmethod
+    def get_best_value(courier: Courier) -> int:
+        max_val = 0
+        for possible_solution in BruteForce.generate_candidates(courier):
+            weight = sum(
+                    courier.weights[k] for k,i
+                    in enumerate(possible_solution) if i
+                    )
+            if weight <= courier.capacity:
+                max_val = max(
+                        max_val,
+                        sum(
+                            courier.values[k] for k, i
+                            in enumerate(possible_solution) if i
+                            )
+                        )
+        return max_val
