@@ -2,6 +2,7 @@ import random
 import itertools
 from abc import ABCMeta, abstractstaticmethod
 from representation import Courier
+from utils import timing
 
 class Strategy(metaclass=ABCMeta):
     '''A strategy interface class from which all solutions should inherit from'''
@@ -12,6 +13,7 @@ class Strategy(metaclass=ABCMeta):
         ...
 
 class HeuristicRandom(Strategy):
+    @timing
     @staticmethod
     def get_best_value(courier: Courier) -> int:
         available = courier.capacity
@@ -29,6 +31,7 @@ class HeuristicRandom(Strategy):
         return sum([courier.values[i] for i in items_added])
 
 class HeuristicByValue(Strategy):
+    @timing
     @staticmethod
     def get_best_value(courier: Courier) -> int:
         available = courier.capacity
@@ -43,6 +46,7 @@ class HeuristicByValue(Strategy):
         return sum([sorted_values[i] for i in items_added])
 
 class HeuristicByWeight(Strategy):
+    @timing
     @staticmethod
     def get_best_value(courier: Courier) -> int:
         available = courier.capacity
@@ -58,6 +62,8 @@ class HeuristicByWeight(Strategy):
         return sum([sorted_values[i] for i in items_added])
 
 class HeuristicByProportion(Strategy):
+
+    @timing
     @staticmethod
     def get_best_value(courier: Courier) -> int:
         available = courier.capacity
@@ -77,6 +83,8 @@ class HeuristicByProportion(Strategy):
         return sum([sorted_values[i] for i in items_added])
 
 class Dynamic(Strategy):
+
+    @timing
     @staticmethod
     def get_best_value(courier: Courier) -> int:
        return(Dynamic.helper(courier, courier.size, courier.capacity))
@@ -102,14 +110,6 @@ class Dynamic(Strategy):
         for row in res:
             print(*row)
 
-class Example(Strategy):
-    '''Example strategy subclass'''
-
-    @staticmethod
-    def get_best_value(_: Courier) -> int:
-        '''Every subclass must define a get_best_value, which takes a courier argument and returns int'''
-        ...
-
 class BruteForce(Strategy):
     '''Use backtracking to brute force the best result'''
 
@@ -117,6 +117,7 @@ class BruteForce(Strategy):
     def generate_candidates(courier: Courier) -> list:
         return [list(i) for i in itertools.product([1,0],repeat=courier.size)]
 
+    @timing
     @staticmethod
     def get_best_value(courier: Courier) -> int:
         max_val = 0
@@ -134,3 +135,33 @@ class BruteForce(Strategy):
                             )
                         )
         return max_val
+
+class Backtracking(Strategy):
+    '''Strategy using an algorithm with backtracking'''
+
+    @staticmethod
+    def helper(courier: Courier, n: int, b: int):
+        if not n or not b:
+            return 0
+        if courier.weights[n-1]>b:
+            return Backtracking.helper(courier,n-1,b)
+        else:
+            return max(
+                    Backtracking.helper(courier, n-1,b-courier.weights[n-1]) + courier.values[n-1],
+                    Backtracking.helper(courier, n-1,b)
+                    )
+
+    @timing
+    @staticmethod
+    def get_best_value(courier: Courier) -> int:
+        return Backtracking.helper(courier, courier.size, courier.capacity)
+
+class Example(Strategy):
+    '''Example strategy subclass'''
+
+    @staticmethod
+    def get_best_value(_: Courier) -> int:
+        '''Every subclass must define a get_best_value, which takes a courier argument and returns int'''
+        ...
+
+
