@@ -1,9 +1,9 @@
 import logging
 import time
-from typing import Any, Callable, Dict, Iterable
+from typing import Any, Callable, Mapping, Iterable
 def average_score(amount_of_tries: int) -> Callable:
     def decorate(func: Callable) -> Callable:
-        def wrapper(*arg, **kw) -> Dict:
+        def wrapper(*arg, **kw) -> Mapping:
             result = {}
             tries = [func(*arg, **kw) for _ in range(amount_of_tries)]
             for key in tries[0]:

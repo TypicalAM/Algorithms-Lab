@@ -1,7 +1,7 @@
 from representation import Courier
 from strategy import Backtracking, BruteForce, Dynamic, HeuristicByProportion, HeuristicByWeight, HeuristicRandom, HeuristicByValue
 
-c = Courier(15)
+c = Courier(15,0.5)
 
 # Overwrite default values
 #c.capacity=10
@@ -17,11 +17,6 @@ print(f'{HeuristicByWeight.get_best_value(c)=}')
 print(f'{HeuristicByValue.get_best_value(c)=}')
 print(f'{HeuristicByProportion.get_best_value(c)=}')
 print(f'{Dynamic.get_best_value(c)=}')
-for _ in range(100):
-    c = Courier(15)
-    bf = BruteForce.get_best_value(c)
-    bt = Backtracking.get_best_value(c)
-    assert bt == bf
 print(f'{BruteForce.get_best_value(c)=}')
 print(f'{Backtracking.get_best_value(c)=}')
 #print(f'Displaying the Dynamic programming matrix...')
