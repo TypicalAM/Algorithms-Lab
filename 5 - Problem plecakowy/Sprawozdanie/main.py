@@ -12,7 +12,7 @@ from utils import average_score, get_logger, write_to_file
 from representation import Courier
 
 
-@average_score(1)
+@average_score(5)
 def run_testcase_2(testcase: int) -> Dict:
     """Run an int testcase for the second exercise"""
     logger.info("Running testcase for %d", testcase)
@@ -28,7 +28,7 @@ def run_testcase_2(testcase: int) -> Dict:
     return times
 
 
-@average_score(1)
+@average_score(5)
 def run_testcase_3(testcase: int) -> Dict:
     """Run an int testcase for the third exercise"""
     logger.info("Running testcase for %d", testcase)
@@ -49,7 +49,7 @@ def run_testcase_3(testcase: int) -> Dict:
     return times
 
 
-@average_score(1)
+@average_score(5)
 def run_testcase_4(testcase: int) -> Dict:
     """Run an int testcase for the fourth exercise"""
     logger.info("Running testcase for %d", testcase)
